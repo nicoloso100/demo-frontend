@@ -6,7 +6,7 @@ function App() {
   const [text, setText] = useState("Cargando...");
 
   useEffect(() => {
-    fetch("http://34.205.157.219:3001/")
+    fetch("http://localhost:3001/")
       .then((response) => response.text())
       .then((data) => setText(data));
   });
